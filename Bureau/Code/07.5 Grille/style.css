@@ -1,0 +1,125 @@
+
+*{
+    font-family: arial;
+    grid-template-rows: 75% 25% / 50% 50%;
+    grid-template-areas: 
+    "Carrouselle Formulaire"
+    "Portrait Formulaire"
+    
+}
+.Tete{
+    background-color:rgb(65, 65,65);
+    text-align: left;
+    color:darkgray;
+    height: 40px;
+  
+    
+    
+}
+.Tete li{
+     list-style-type: none;
+    padding: 0 15px;
+    
+    
+
+}
+
+.Tete ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-top: 12px; 
+    padding-left: 10px;
+}
+
+.Tete li:hover {
+    background-color: beige;
+    color: black;
+    padding: 5px 5px; 
+}
+
+
+.carousel{
+display: grid;
+grid-area: Carrouselle;
+background-color: rgb(206, 206, 206);
+
+}
+.consigne h2{
+    font-size: 20px;
+    text-align: center;
+}
+.Image{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.Image article{
+    background-color: rgb(206, 206, 206);
+    height: 200px;
+    width: 200px; 
+    
+
+}
+.portrait{
+    grid-area: Portrait;
+}
+@media screen and (max-width: 961px) {
+    
+    .Image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .Image article{
+        height: 100px;
+        width: 85%;
+        margin: 5px 0;
+        
+
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .part1,.part2,.part3 {
+        align-items: center;
+    }
+}
+form h2{
+    border-top: solid black 1px;
+}
+form input{
+    padding: 0 80% 5px 0;
+    margin: 10px 5%;
+
+}
+form textarea{
+    padding-bottom: 30px;
+    padding-right: 80%;
+    margin: 20px 5% ;
+
+}
+footer {
+    background-color: rgb(65, 65, 65);
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-around;
+}
+footer a{
+    color: rgb(206, 206, 206);
+    justify-content: center;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.part1,.part2,.part3 {
+    display: flex;
+    flex-direction: column;
+
+}
+.Fomullaire{
+    grid-area: Formulaire;
+}

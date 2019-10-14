@@ -1,0 +1,90 @@
+*{
+    font-family: arial;
+}
+.Tete{
+    background-color:rgb(65, 65,65);
+    text-align: left;
+    color:darkgray;
+    height: 40px;
+    
+    
+}
+.Tete li{
+     list-style-type: none;
+    display: inline;
+    padding: 0 15px;
+    
+    
+
+}
+
+.Tete ul{
+    padding-top: 12px; 
+    padding-left: 10px;
+}
+
+.Tete li:hover {
+    background-color: beige;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.carousel{
+background-color: rgb(206, 206, 206);
+height: 200px;
+}
+.consigne h2{
+    font-size: 20px;
+    text-align: center;
+}
+.Image{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.Image article{
+    background-color: rgb(206, 206, 206);
+    height: 200px;
+    width: 200px; 
+    
+
+}
+@media screen and (max-width: 961px) {
+    
+    .Image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .Image article{
+        height: 100px;
+        width: 85%;
+        margin: 5px 0;
+        
+
+    }
+
+
+}
+form h2{
+    border-top: solid black 1px;
+}
+form input{
+    padding: 0 80% 5px 0;
+    margin: 10px 5%;
+
+}
+form textarea{
+    padding-bottom: 30px;
+    padding-right: 80%;
+    margin: 20px 5% ;
+
+}
+footer {
+
+    
+}
