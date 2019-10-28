@@ -7,7 +7,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      Simpsons: {}
+      Simpsons: null
     };
   }
   getSimpsons = () => {
@@ -19,10 +19,13 @@ class App extends React.Component {
         })
       })
   }
+  componentDidMount = () => {
+    this.getSimpsons()
+  }
   render() {
     return ( 
       <div className="App">
-        <DisplaySimpson Simpsons={this.state.Simpsons}/>
+       {this.state.Simpsons ? <DisplaySimpson Simpsons={this.state.Simpsons}/>:<p>Loading</p>}
         <button type="button" onClick={this.getSimpsons}>Get Simpsons</button>
 
       </div>

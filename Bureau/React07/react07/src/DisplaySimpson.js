@@ -3,7 +3,7 @@ import React from 'react';
 class DisplaySimpson extends React.Component {
     constructor(props) {
       super(props);
-      console.log(props.Simpsons)
+      console.log(props)
     }
 
 render() {
